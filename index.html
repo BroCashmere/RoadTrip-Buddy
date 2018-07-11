@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RoadTrip Companion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+
+    <div class="container">
+        <p id="header">RoadTrip Companion</p>
+        <div class="section" id="search-bar">
+            <div class="row">
+                <div class="input-field col s5">
+                    <input placeholder="Where are you starting from?" id="start" type="text" class="validate">
+                </div>
+                <div class="col s1">
+                    <img src="./assets/images/arrow.png" class="arrow-icon">
+                </div>
+                <div class="input-field col s5">
+                    <input placeholder="Where are you heading?" id="finish" type="text" class="validate">
+                </div>
+                <div class="col s1">
+                    <button class="btn waves-effect waves-green #bdbdbd grey lighten-1" id="submitButton" type="submit" name="action">Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="maps-weather">
+            <div class="row">
+                <div class="col s8" id='mapDiv'>
+
+                </div>
+
+                <div class="col s4">
+                    <div id="weather-data"></div>
+                </div>
+            </div>
+        </div>
+        <div class="directions"></div>
+
+       
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
